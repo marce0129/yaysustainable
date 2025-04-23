@@ -1,0 +1,161 @@
+.menu-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+.activities-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .activity-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  
+  .activity-image {
+    height: 250px;
+    overflow: hidden;
+  }
+  
+  .activity-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .activity-card:hover .activity-image img {
+    transform: scale(1.05);
+  }
+  
+  .activity-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .activity-card h2 {
+    color: #2a6c3b;
+    font-family: 'bellota', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .activity-card p {
+    color: #3c5c4a;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .sustainability-town {
+    border-top: 4px solid #4CAF50;
+  }
+  
+  .sustainability-town h2::after {
+    margin-left: 10px;
+  }
+  
+  .permaculture-tour {
+    border-top: 4px solid #8BC34A;
+  }
+  
+  .permaculture-tour h2::after {
+    margin-left: 10px;
+  }
+  
+  .cacao-tour {
+    border-top: 4px solid #795548;
+  }
+  
+  .cacao-tour h2::after {
+    margin-left: 10px;
+  }
+  
+  .ecological-walk {
+    border-top: 4px solid #2196F3;
+  }
+  
+  .ecological-walk h2::after {
+    margin-left: 10px;
+  }
+  
+  .waterfall {
+    border-top: 4px solid #00BCD4;
+  }
+  
+  .waterfall h2::after {
+    margin-left: 10px;
+  }
+  
+  .horse-riding {
+    border-top: 4px solid #607D8B;
+  }
+  
+  .horse-riding h2::after {
+    margin-left: 10px;
+  }
+  
+  .indigenous-towns {
+    border-top: 4px solid #FF9800;
+  }
+  
+  .indigenous-towns h2::after {
+    margin-left: 10px;
+  }
+  
+  .lost-city {
+    border-top: 4px solid #9C27B0;
+  }
+  
+  .lost-city h2::after {
+    margin-left: 10px;
+  }
+  
+  .beaches {
+    border-top: 4px solid #FFEB3B;
+  }
+  
+  .beaches h2::after {
+
+    margin-left: 10px;
+  }
+  
+  .tayrona {
+    border-top: 4px solid #4CAF50;
+  }
+  
+  .tayrona h2::after {
+    margin-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .activities-container {
+      grid-template-columns: 1fr;
+      padding: 0 1rem;
+    }
+    
+    .activity-card h2 {
+      font-size: 1.5rem;
+    }
+  }
